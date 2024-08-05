@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>file</title>
+    <style>
+        .total {
+            background-color:rgb(94, 202, 244);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .inner {
+            position: fixed;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin: 40px;
+            height: 600px;
+            width: 1000px;
+            background-color: white;
+        }
+        .left-bar {
+            background-color: white;
+        }
+        .center-bar {
+            background-color: lightgrey;
+        }
+        .my{
+            margin-left: 70px;
+        }
+        .img{
+            margin-left: 45px;
+            padding: 25px;
+            display: block;
+            height: 40px;
+            width: 40px;
+        }
+        .last{
+            margin-top: 90px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 40px;
+        }
+        .search{
+            position: absolute;
+            margin-left: 60px;
+            margin-top: 10px;
+            height: 40px;
+            width:600px;
+            border-radius: 8px;
+            border: none;
+            padding: 10px;
+        }
+  .img1{
+    height: 30px;
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 620px;
+    position: relative;
+  }
+  .head{
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+  .img2{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    padding-left: 60px;
+  }
+  .para{
+    display: inline;
+    padding: 20px;
+    padding-left: 65px;
+  }
+  .vid-clip{
+    margin-left: 60px;
+    height: 140px;
+    width: 180px;
+    border-radius: 4px;
+  }
+    </style>
+</head>
+<body>
+<div class="total">
+    <div class="inner">
+        <div class="left-bar">
+             <h4 class="my">MyDocs</h4>
+            <image class="img" src="menu1.jpg">
+            <image class="img"  src="folder.jpg">            
+            <image  class="img" src="disc.jpg">
+            <image class="img"  src="setting.jpg">
+            <image class="last"  src="logout.jpg">
+            </div>
+        <div class="center-bar">
+            <input class="search" type="text" placeholder="e.g. files.doc"><image class="img1" src="search.jpg">
+                <h2 class="head">Quick Access</h2>
+       
+        <div class="cen">
+            <image class="img2"src="photo.jpg">
+            <image class="img2"src="music.jpg">
+             <image class="img2"src="video.jpg">
+             <image class="img2" src="doc.jpg">
+            <image class="img2"src="download12.jpg">
+           <div><p class="para">Photos</p>
+            <p class="para">Audio</p>
+            <p class="para">Video</p>
+            <p class="para">Document</p>
+            <p class="para">Download</p>
+           </div>
+           <h2 class="head">Preview</h2> 
+          
+           <div class="video">
+            <image class="vid-clip"src="pic.png">
+                <image class="vid-clip"src="pic2.png">    
+           </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
