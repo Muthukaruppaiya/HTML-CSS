@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test01</title>
+<style>
+    .whole {
+        display: grid;
+        height: 800px;
+        width: 1200px;
+        background-color: rgb(242, 175, 175);
+    }
+    .total {
+        margin-left: 100px;
+        display: flex;
+        align-items: center;  
+    }
+    .photo {
+        height: 40px;
+        width: 40px;
+        border-radius: 4px;
+    }
+    .face, .insta, .tweet, .github, .youtube {
+        flex: 1;
+        position: relative;
+    }
+    .but1, .but2, .but3, .but4, .but5 {
+        position: relative;
+        padding: 0;
+        border: none;
+        border-radius: 50px;
+    }
+    .tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute; 
+        bottom: 100%;
+        left: 15%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .face:hover .tooltip, .tweet:hover .tooltip, .insta:hover .tooltip, .github:hover .tooltip, .youtube:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+    .but1:hover {
+        background-color: blue;
+    }
+    .but2:hover {
+        background-color: skyblue;
+    }
+    .but3:hover {
+        background-color: rgb(157, 47, 108);
+    }
+    .but4:hover {
+        background-color: lightgray;
+    }
+    .but5:hover {
+        background-color: rgb(220, 14, 14);
+    }
+</style>
+</head>
+<body>
+    <div class="whole">
+        <div class="total">
+            <div class="face">
+                <button class="but1"><img class="photo" src="facebook.jpg" alt="Facebook"></button>
+                <p class="tooltip">Facebook</p>
+            </div>
+            <div class="tweet">
+                <button class="but2"><img class="photo" src="tweter.jpg" alt="Twitter"></button>
+                <p class="tooltip">Twitter</p>
+            </div>
+            <div class="insta">
+                <button class="but3"><img class="photo" src="insta.jpg" alt="Instagram"></button>
+                <p class="tooltip">Instagram</p>
+            </div>
+            <div class="github">
+                <button class="but4"><img class="photo" src="github.jpg" alt="GitHub"></button>
+                <p class="tooltip">GitHub</p>
+            </div>
+            <div class="youtube">
+                <button class="but5"><img class="photo" src="youtube.jpg" alt="YouTube"></button>
+                <p class="tooltip">YouTube</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
